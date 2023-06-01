@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "zamek"
+version = "0.1.0"
+description = ""
+authors = ["micash"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.24.1"
+colorama = "^0.4.6"
+lolpython = "^2.2.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
