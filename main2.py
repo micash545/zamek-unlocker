@@ -18,7 +18,7 @@ def number_bruteforce(start_num, result_queue, stop_event, tried_numbers):
 
         retry_count = 0
         while retry_count < 10:
-            print(f'{thread_color}[Thread {thread_num}]{Style.RESET_ALL} Próba kodu: {kod}')
+            print(f'{thread_color}[Thread {thread_num}]{Style.RESET_ALL} Zapytanie GET: http://192.168.4.1/kodzamkato/{kod})')
             try:
                 with httpx.Client(timeout=5) as client:
                     response = client.get(f'http://192.168.4.1/kodzamkato/{kod}')
