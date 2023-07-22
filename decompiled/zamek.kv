@@ -1,0 +1,67 @@
+<Przycisk@Button>:
+    background_normal: ''
+    background_color: 80/255, 160/255, 255/255, 1
+    color: 0, 0, 0, 1
+    font_size: self.height/2.75
+
+<Kod>:
+    orientation: 'vertical'
+    BoxLayout:
+        padding: 15
+        size_hint_y: 0.3
+        canvas.before:
+            Color:
+                rgba: 0, 0/255, 0, 0
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: root.labelText
+            font_size: self.height/2.25
+    GridLayout:
+        padding: 5
+        rows: 4
+        cols: 3
+        spacing: 5
+        canvas.before:
+            Color:
+                rgba: 10/255, 11/255, 25/255, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Przycisk:
+            on_press: root.num(1)
+            text: "1"
+        Przycisk:
+            on_press: root.num(2)
+            text: "2"
+        Przycisk:
+            on_press: root.num(3)
+            text: "3"
+        Przycisk:
+            on_press: root.num(4)
+            text: "4"
+        Przycisk:
+            on_press: root.num(5)
+            text: "5"
+        Przycisk:
+            on_press: root.num(6)
+            text: "6"
+        Przycisk:
+            on_press: root.num(7)
+            text: "7"
+        Przycisk:
+            on_press: root.num(8)
+            text: "8"
+        Przycisk:
+            on_press: root.num(9)
+            text: "9"
+        Przycisk:
+            on_press: root.clear()
+            text: "C"
+        Przycisk:
+            on_press: root.num(0)
+            text: "0"
+        Przycisk:
+            on_press: root.ok()
+            text: "OK"
